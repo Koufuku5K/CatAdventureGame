@@ -17,5 +17,10 @@ public class TreeStump : MonoBehaviour
         {
             treeStumpGenerator.generateTreeStump();
         }
+
+        if (collision.gameObject.CompareTag("finishLine"))
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
