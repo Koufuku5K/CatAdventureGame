@@ -27,10 +27,16 @@ public class TreeStumpGenerator : MonoBehaviour
         }
     }
 
-    public void generateTreeStump()
+    void generateTreeStump()
     {
         GameObject treeStumpIns = Instantiate(treeStump, transform.position, transform.rotation);
 
         treeStumpIns.GetComponent<TreeStump>().treeStumpGenerator = this;
+    }
+
+    public void generateNextTreeStumpWithGap()
+    {
+        float waitGenerateNext = Random.Range(0.1f, 2.0f);
+        Invoke("generateTreeStump", waitGenerateNext);
     }
 }

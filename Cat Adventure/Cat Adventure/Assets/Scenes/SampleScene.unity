@@ -787,6 +787,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeStump: {fileID: 5879155731711001879, guid: dfab6f746fd84e24280db9ac8d283f61, type: 3}
   minSpeed: 5
-  maxSpeed: 12
+  maxSpeed: 20
   currentSpeed: 0
   speedMultiplier: 0.00015

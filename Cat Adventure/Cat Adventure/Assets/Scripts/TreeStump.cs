@@ -15,7 +15,7 @@ public class TreeStump : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("nextLine"))
         {
-            treeStumpGenerator.generateTreeStump();
+            treeStumpGenerator.generateNextTreeStumpWithGap();
         }
 
         if (collision.gameObject.CompareTag("finishLine"))
