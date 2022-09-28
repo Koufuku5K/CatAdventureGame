@@ -9,6 +9,8 @@ public class TreeStumpGenerator : MonoBehaviour
     public float maxSpeed;
     public float currentSpeed;
 
+    public float speedMultiplier;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -19,7 +21,10 @@ public class TreeStumpGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(currentSpeed < maxSpeed)
+        {
+            currentSpeed += speedMultiplier;
+        }
     }
 
     public void generateTreeStump()
